@@ -144,7 +144,7 @@ function login() {
   }, 1000);
 }
 
-// this for take the paramter of name of user in put in home paged
+// this for take the paramter of name of user in put in home page
 if (window.location.pathname.endsWith("home.html")) {
   const params = new URLSearchParams(window.location.search);
   const username = params.get("username");
