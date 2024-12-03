@@ -46,3 +46,10 @@ textarea:focus {
 .full-width-btn {
   width: 100%;
 }
+#indexPage{
+  background-image: url(../images/abstract-digital-technology-background-with-concept-security-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
