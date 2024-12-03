@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/images.jpg">
+    <title>signin page</title>
+    <script
+    src="https://kit.fontawesome.com/e0fd1ee343.js"
+    crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+    <div class="container my-5 text-center ">
+      <div class="group m-auto w-75 p-5">
+          <h1>Smart Login System</h1>
+          <input id="signinEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+          <div class="inputPassword position-relative">
+          <input id="signinPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+          <button
+          type="button"
+          id="togglePassword"
+          class="btn btn-sm btn-outline-secondary position-absolute end-0 top-50 translate-middle-y me-2" onclick="shown();"
+        >
+          <i class="fa-solid fa-eye" id="toggleIcon"></i>
+        </button>
+      </div>
+          <p id="incorrect" class="h5"></p>
+          <p id="correct" class="h5"></p>
+
+
+          <button onclick="login()" class="btn btn-outline-info w-100 my-3">Login</button>
+          <p class="text-white">Don’t have an account? <a class="text-white" href="signup.html">Sign Up</a></p>
+
+      </div>
+      <p id="incorrect"></p>
+  </div>
+
+
+
+ 
+
+
+
+
+
+
+  
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

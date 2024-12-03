@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/images.jpg">
+    <title>Sign Up page</title>
+    <script
+      src="https://kit.fontawesome.com/e0fd1ee343.js"
+      crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="container my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+
+        <div class="nameinput text-start">
+          <input oninput="validate(this)" id="signupName"
+            class="form-control my-3" placeholder="Enter your name" type="text">
+          <div class="alert alert-danger my-2 d-none" role="alert">
+            "Invalid name. Please enter a valid name like <strong>Ahmed
+              .</strong>"
+          </div>
+        </div>
+
+        <div class="emailinput text-start ">
+          <input oninput="validate(this)" id="signupEmail"
+            class="form-control my-3" placeholder="Enter your email"
+            type="email">
+          <div class="alert alert-danger my-2 d-none" role="alert">
+            "Invalid email. Please enter a email like <strong>example@gmail.com
+              .</strong>"
+          </div>
+         
+        </button>
+        </div>
+
+        <div class="passwordinput text-start position-relative">
+          <input oninput="validate(this)" id="signupPassword"
+            class="form-control my-3" placeholder="Enter  password"
+            type="password">
+          <div class="alert alert-danger my-2 d-none" role="alert">
+            "Invalid password. Please enter at least <strong> 7 characters with
+              digits only </strong>"
+          </div>
+        </div>
+
+
+
+        <p id="exist" class="h5"></p>
+        <button onclick="signUp()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p class="text-white">You have an account? <a class="text-white" href="signin.html">Signin</a></p>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
